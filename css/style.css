@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      background: rgb(255, 153, 0);
+    font-family: 'Fascinate Inline', cursive;
+    /* height: 100vh; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+      font-size: 70px;
+      padding: 0;
+  }
+  h2{
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    grid-gap: 1vmin;
+  }
+  
+  section.container div {
+    text-align: center;
+    font-size: 56px;
+    border-radius: 40%;
+    border: 1px solid black;
+    background: rgb(255, 188, 87);
+}
+#forHover div:hover{
+    background: rgb(255, 207, 135);
+}
+button{
+    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 15%;
+    outline: none;
+  }
+  button:hover{
+      color: rgb(255, 0, 0);
+      font-size: 14px;
+  }
+  .red{
+      color:red;
+  }
