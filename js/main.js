@@ -14,7 +14,6 @@ reset.addEventListener('click' , init)
 function init(){
     for (i = 0 ; i <= winPattern.length ; i++){
         document.getElementById(i).textContent = '';}
-        // document.getElementById(i).classList.remove('red');
         msg.textContent = 'Someone Make a Move'
         winner = 'none'
         moves = 0;}
@@ -36,7 +35,6 @@ function result (){
         if( document.getElementById(winPattern[i][0]).textContent === turn && document.getElementById(winPattern[i][1]).textContent === turn && document.getElementById([winPattern[i][2]]).textContent ===turn){
             winner = turn;
             msg.textContent = `${turn} is the winner!`
-            // document.getElementById('forHover').removeAttribute('id')
         }
         else if (moves == 9 && winner !==turn ){
             msg.textContent = 'TIE'}}}
