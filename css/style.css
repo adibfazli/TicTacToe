@@ -37,17 +37,25 @@
 }
 #forHover div:hover{
     background: rgb(255, 207, 135);
+    cursor: pointer;
 }
 button{
-    width: 70px;
+    width: 80px;
     height: 40px;
     margin-top: 20px;
-    border-radius: 15%;
+    border-radius: 50%;
     outline: none;
+    border: 1px solid black;
+    background: rgb(255, 188, 87)
+    
   }
   button:hover{
       color: rgb(255, 0, 0);
+      background: rgb(255, 207, 135);
       font-size: 14px;
+      border-radius: 15%;
+      transition: 0.5s;
+      cursor: pointer;
   }
   .red{
       color:red;

@@ -23,9 +23,10 @@ function clickHandler(evt){
     if (winner !== turn && evt.target.textContent === ''){
         if (turn === player[0] ){ 
             turn = player[1]
-            msg.textContent = `Make a move ${player[0]}!`}
+            msg.textContent = `Make a move ${player[0]}!`
+            evt.target.removeAttribute('class')}
         else{
-            // evt.target.className = 'red'
+            evt.target.className = 'red'
             msg.textContent = `Make a move ${player[1]}!`
             turn = player[0]}
         evt.target.textContent = turn;
